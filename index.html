@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DEGI — design and creative collaboration for teams. Canvas, docs, and feedback in one workspace.">
+  <meta property="og:title" content="DEGI | Design & Creative Collaboration">
+  <meta property="og:description" content="Figma meets Notion for creative teams. Design, document, and ship together.">
+  <title>DEGI | Design & Creative Collaboration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <nav class="main-nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#logoGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs></svg>
+        </span>
+        DEGI
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#demo" class="nav-link nav-link--muted">Log in</a>
+        <a href="#demo" class="btn btn-nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--violet" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb--cyan" aria-hidden="true"></div>
+      <div class="hero-particles" aria-hidden="true">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          <span>Public beta</span>
+          <span class="hero-badge-sep" aria-hidden="true">·</span>
+          <span>12,000+ creative teams</span>
+        </div>
+
+        <p class="section-label hero-label">Design &amp; creative collaboration</p>
+
+        <h1 class="hero-headline" id="hero-headline">
+          <span class="hero-line">Where creative</span>
+          <span class="hero-line hero-line--gradient">teams ship together.</span>
+        </h1>
+
+        <p class="hero-desc">DEGI unites canvas, docs, and feedback in one workspace — so designers, writers, and stakeholders build beautiful work without the tool sprawl.</p>
+
+        <div class="hero-actions">
+          <a href="#demo" class="btn btn-primary btn-glow">Get Started</a>
+          <a href="#features" class="btn btn-ghost">See how it works</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="hero-avatars" aria-hidden="true">
+            <span class="hero-avatar">AK</span>
+            <span class="hero-avatar">ML</span>
+            <span class="hero-avatar">JO</span>
+            <span class="hero-avatar">RS</span>
+            <span class="hero-avatar hero-avatar--more">+</span>
+          </div>
+          <p class="hero-trust-text">Join <strong>12,000+</strong> teams shipping on DEGI</p>
+        </div>
+
+        <div class="hero-mockup-wrap" id="hero-mockup-wrap">
+          <div class="mockup-shine" aria-hidden="true"></div>
+          <div class="hero-mockup glass-card" id="hero-mockup">
+            <div class="mockup-toolbar">
+              <span class="mockup-live"><span class="mockup-live-dot"></span> Live session</span>
+              <span class="mockup-tab mockup-tab--active">Brand System v2</span>
+              <span class="mockup-tab">Client Review</span>
+            </div>
+            <svg class="mockup-svg" viewBox="0 0 960 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DEGI workspace preview">
+              <rect width="960" height="480" fill="#111118"/>
+              <rect x="72" y="24" width="200" height="432" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+              <rect x="92" y="48" width="80" height="8" rx="2" fill="rgba(136,136,170,0.5)"/>
+              <rect x="92" y="72" width="140" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+              <rect x="92" y="88" width="120" height="6" rx="2" fill="rgba(255,255,255,0.06)"/>
+              <rect x="92" y="120" width="160" height="88" rx="6" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.45)"/>
+              <rect x="92" y="224" width="160" height="56" rx="6" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.3)"/>
+              <rect x="300" y="24" width="588" height="432" rx="8" fill="rgba(6,182,212,0.04)" stroke="rgba(6,182,212,0.18)"/>
+              <rect x="320" y="48" width="220" height="14" rx="3" fill="rgba(248,248,255,0.92)"/>
+              <rect x="320" y="76" width="340" height="8" rx="2" fill="rgba(136,136,170,0.35)"/>
+              <rect x="320" y="108" width="260" height="180" rx="8" fill="rgba(124,58,237,0.18)" stroke="rgba(124,58,237,0.5)" class="mockup-frame"/>
+              <rect x="600" y="108" width="268" height="88" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+              <g class="mockup-chart">
+                <rect x="612" y="168" width="28" height="20" rx="2" fill="rgba(124,58,237,0.35)" class="chart-bar"/>
+                <rect x="648" y="152" width="28" height="36" rx="2" fill="rgba(124,58,237,0.5)" class="chart-bar"/>
+                <rect x="684" y="160" width="28" height="28" rx="2" fill="rgba(124,58,237,0.4)" class="chart-bar"/>
+                <rect x="720" y="140" width="28" height="48" rx="2" fill="url(#barGrad)" class="chart-bar chart-bar--peak"/>
+                <rect x="756" y="156" width="28" height="32" rx="2" fill="rgba(6,182,212,0.45)" class="chart-bar"/>
+              </g>
+              <rect x="600" y="212" width="268" height="100" rx="6" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.35)"/>
+              <circle cx="336" cy="380" r="14" fill="url(#avatarGrad)"/>
+              <circle cx="358" cy="362" r="6" fill="#06B6D4" class="mockup-cursor mockup-cursor--1"/>
+              <circle cx="520" cy="200" r="6" fill="#7C3AED" class="mockup-cursor mockup-cursor--2"/>
+              <rect x="360" y="372" width="96" height="8" rx="2" fill="rgba(248,248,255,0.75)"/>
+              <rect x="360" y="386" width="64" height="6" rx="2" fill="rgba(136,136,170,0.45)"/>
+              <defs>
+                <linearGradient id="avatarGrad" x1="322" y1="366" x2="350" y2="394"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient>
+                <linearGradient id="barGrad" x1="720" y1="140" x2="748" y2="188"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <aside class="hero-float hero-float--tl glass-card">
+            <span class="hero-float-label">Comments resolved</span>
+            <span class="hero-float-value" id="hero-metric-comments">0</span>
+            <span class="hero-float-sub">today</span>
+          </aside>
+          <aside class="hero-float hero-float--br glass-card">
+            <span class="hero-float-label">Sync status</span>
+            <span class="hero-float-value hero-float-value--live">Live</span>
+            <span class="hero-float-sub">3 editors online</span>
+          </aside>
+        </div>
+
+        <a href="#social-proof" class="hero-scroll-hint" aria-label="Scroll to explore">
+          <span class="hero-scroll-line"><span class="hero-scroll-dot"></span></span>
+          <span class="hero-scroll-text">Explore</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 2. SOCIAL PROOF -->
+    <section class="social-proof-section" id="social-proof">
+      <p class="social-proof-label">Trusted by <strong>12,000+</strong> creative teams</p>
+      <div class="logo-strip">
+        <div class="logo-item" title="Northline">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M10 16h12" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span>Northline</span>
+        </div>
+        <div class="logo-item" title="Studio K">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M16 10v12M10 16h12" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span>Studio K</span>
+        </div>
+        <div class="logo-item" title="Forma">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 24L16 8l8 16H8z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          <span>Forma</span>
+        </div>
+        <div class="logo-item" title="Pixel &amp; Co">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="6" width="8" height="8" fill="currentColor" opacity="0.6"/><rect x="18" y="6" width="8" height="8" fill="currentColor"/><rect x="6" y="18" width="8" height="8" fill="currentColor"/><rect x="18" y="18" width="8" height="8" fill="currentColor" opacity="0.6"/></svg>
+          <span>Pixel &amp; Co</span>
+        </div>
+        <div class="logo-item" title="Arcwave">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 Q16 6 26 22" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          <span>Arcwave</span>
+        </div>
+        <div class="logo-item" title="Lumen">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="14" r="6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M10 26h12" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span>Lumen</span>
+        </div>
+      </div>
+      <p class="ratings-line">
+        <span class="gold">4.9★</span> on G2 · Capterra · Product Hunt
+      </p>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- STATS (count-up) -->
+    <section class="stats-section" id="stats" aria-label="Platform metrics">
+      <div class="stats-grid">
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-num" data-target="12">0</span><span class="stat-suffix">K+</span>
+          <span class="stat-label">Creative teams</span>
+        </div>
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-num" data-target="48">0</span><span class="stat-suffix">M+</span>
+          <span class="stat-label">Files shared</span>
+        </div>
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-num" data-target="4">0</span><span class="stat-suffix">×</span>
+          <span class="stat-label">Faster reviews</span>
+        </div>
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-num" data-target="99">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Uptime SLA</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 3. FEATURES -->
+    <section id="features" class="features-section">
+      <div class="section-container">
+        <header class="section-header reveal-on-scroll">
+          <p class="section-label">Capabilities</p>
+          <h2 class="section-title">Everything your studio needs — nothing it doesn't.</h2>
+        </header>
+
+        <div class="bento-grid">
+          <article class="feature-card glass-card bento-item bento-item--wide reveal-on-scroll" data-stagger="0">
+            <div class="feature-icon" aria-hidden="true">◫</div>
+            <h3>Live canvas</h3>
+            <p>Co-edit frames with live cursors, component libraries, and multiplayer presence — like your design tool, built for teams.</p>
+          </article>
+          <article class="feature-card glass-card bento-item reveal-on-scroll" data-stagger="1">
+            <div class="feature-icon" aria-hidden="true">◇</div>
+            <h3>Creative docs</h3>
+            <p>Briefs, mood boards, and copy blocks beside your canvas. Notion-style docs that stay linked to every frame.</p>
+          </article>
+          <article class="feature-card glass-card bento-item reveal-on-scroll" data-stagger="2">
+            <div class="feature-icon" aria-hidden="true">◎</div>
+            <h3>Pin-point feedback</h3>
+            <p>Clients comment on the work, not in email. Threaded reviews with resolve states and version snapshots.</p>
+          </article>
+          <article class="feature-card glass-card bento-item reveal-on-scroll" data-stagger="3">
+            <div class="feature-icon" aria-hidden="true">⬡</div>
+            <h3>Brand systems</h3>
+            <p>Tokens, type scales, and components in a shared library — always in sync across every project.</p>
+          </article>
+          <article class="feature-card glass-card bento-item bento-item--tall reveal-on-scroll" data-stagger="4">
+            <div class="feature-icon" aria-hidden="true">◉</div>
+            <h3>Approval flows</h3>
+            <p>Route work through stakeholders with clear stages. Nothing ships without the right sign-off.</p>
+            <span class="feature-badge">Most used</span>
+          </article>
+          <article class="feature-card glass-card bento-item reveal-on-scroll" data-stagger="5">
+            <div class="feature-icon" aria-hidden="true">↗</div>
+            <h3>Dev handoff</h3>
+            <p>Specs, assets, and CSS values generated from approved frames — one link for engineering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 4. HOW IT WORKS -->
+    <section id="how-it-works" class="how-section">
+      <div class="section-container">
+        <header class="section-header reveal-on-scroll">
+          <p class="section-label">How it works</p>
+          <h2 class="section-title">From brief to shipped in three steps.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-step reveal-on-scroll" data-stagger="0">
+            <div class="step-circle"><span>1</span></div>
+            <h3>Create your space</h3>
+            <p>Import from Figma or start fresh. Organize projects, invite your team, and set brand guidelines in minutes.</p>
+          </li>
+          <li class="timeline-step reveal-on-scroll" data-stagger="1">
+            <div class="step-circle"><span>2</span></div>
+            <h3>Design &amp; document</h3>
+            <p>Build on the canvas while writers and strategists work in linked docs — always in context, never out of sync.</p>
+          </li>
+          <li class="timeline-step reveal-on-scroll" data-stagger="2">
+            <div class="step-circle"><span>3</span></div>
+            <h3>Review &amp; ship</h3>
+            <p>Share review links, collect feedback, lock versions, and hand off to dev with confidence.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 5. TESTIMONIALS -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-container">
+        <header class="section-header reveal-on-scroll">
+          <p class="section-label">Stories</p>
+          <h2 class="section-title">Loved by studios that care about craft.</h2>
+        </header>
+
+        <div class="testi-grid">
+          <article class="testi-card glass-card reveal-on-scroll" data-stagger="0">
+            <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testi-quote">"DEGI replaced three tools for us. Reviews happen on the work itself — our cycle went from ten days to three."</blockquote>
+            <footer class="testi-author">
+              <div class="avatar-placeholder" aria-hidden="true">JO</div>
+              <div>
+                <cite class="testi-name">Jordan Okonkwo</cite>
+                <span class="testi-role">Creative Director, Northline</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testi-card glass-card testi-card--highlight reveal-on-scroll" data-stagger="1">
+            <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testi-quote">"Docs beside the canvas changed how we brief. Strategists and designers finally share one source of truth."</blockquote>
+            <footer class="testi-author">
+              <div class="avatar-placeholder" aria-hidden="true">ML</div>
+              <div>
+                <cite class="testi-name">Maya Lin</cite>
+                <span class="testi-role">Head of Design, Forma</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testi-card glass-card reveal-on-scroll" data-stagger="2">
+            <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testi-quote">"Client sharing without accounts was the unlock. Feedback lands exactly where it should — on the frame."</blockquote>
+            <footer class="testi-author">
+              <div class="avatar-placeholder" aria-hidden="true">RS</div>
+              <div>
+                <cite class="testi-name">Riley Santos</cite>
+                <span class="testi-role">Founder, Studio K</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 6. PRICING -->
+    <section id="pricing" class="pricing-section">
+      <div class="section-container">
+        <header class="section-header section-header--center reveal-on-scroll">
+          <p class="section-label">Pricing</p>
+          <h2 class="section-title">Plans that scale with your studio.</h2>
+          <p class="section-sub">Start free. Upgrade when your team is ready. No surprise seat taxes.</p>
+        </header>
+
+        <div class="pricing-toggle-wrap reveal-on-scroll">
+          <button type="button" class="pricing-toggle" id="pricing-toggle" aria-pressed="false">
+            <span class="toggle-opt toggle-opt--active" data-period="monthly">Monthly</span>
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+            <span class="toggle-opt" data-period="annual">Annual <em class="save-tag">−20%</em></span>
+          </button>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card glass-card reveal-on-scroll" data-stagger="0">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-price"><span class="price-val" data-monthly="0" data-annual="0">$0</span><span class="price-period">/mo</span></p>
+            <p class="plan-desc">For freelancers exploring a unified creative workspace.</p>
+            <ul class="plan-features">
+              <li>2 active projects</li>
+              <li>5 GB storage</li>
+              <li>Basic commenting</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#demo" class="btn btn-outline">Get Started</a>
+          </article>
+
+          <article class="pricing-card glass-card pricing-card--featured reveal-on-scroll" data-stagger="1">
+            <span class="popular-badge">Most Popular</span>
+            <h3 class="plan-name">Studio</h3>
+            <p class="plan-price"><span class="price-val" data-monthly="49" data-annual="39">$49</span><span class="price-period">/mo</span></p>
+            <p class="plan-desc">For growing teams shipping client work every week.</p>
+            <ul class="plan-features">
+              <li>Unlimited projects</li>
+              <li>100 GB storage</li>
+              <li>Approval workflows</li>
+              <li>Brand library</li>
+              <li>Dev handoff</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#demo" class="btn btn-primary btn-glow">Get Started</a>
+          </article>
+
+          <article class="pricing-card glass-card reveal-on-scroll" data-stagger="2">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-price"><span class="price-val price-val--custom">Custom</span></p>
+            <p class="plan-desc">Security, SSO, and dedicated success for large orgs.</p>
+            <ul class="plan-features">
+              <li>Unlimited storage</li>
+              <li>SSO / SAML</li>
+              <li>Audit logs</li>
+              <li>Custom integrations</li>
+              <li>Dedicated CSM</li>
+            </ul>
+            <a href="#demo" class="btn btn-outline">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 7. CTA BANNER -->
+    <section class="cta-banner" id="cta">
+      <div class="cta-mesh" aria-hidden="true"></div>
+      <div class="cta-inner reveal-on-scroll">
+        <h2 class="cta-title">Ready to design together?</h2>
+        <p class="cta-sub">Join thousands of creative teams on DEGI. Free to start — no credit card.</p>
+        <a href="#demo" class="btn btn-primary btn-glow btn-lg">Get Started</a>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 8. FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="footer-logo">
+              <span class="logo-icon logo-icon--sm" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="url(#footerGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="footerGrad" x1="2" y1="2" x2="22" y2="22"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#06B6D4"/></linearGradient></defs></svg>
+              </span>
+              DEGI
+            </a>
+            <p class="footer-tagline">Canvas, docs, and feedback — one home for creative teams.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 DEGI, Inc. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Demo modal / anchor section -->
+  <section id="demo" class="demo-section" aria-labelledby="demo-title">
+    <div class="demo-panel glass-card reveal-on-scroll">
+      <h2 id="demo-title">Start your studio on DEGI</h2>
+      <p>Tell us about your team — we'll set up your workspace within 24 hours.</p>
+      <form class="demo-form" id="demo-form">
+        <div class="form-row">
+          <label>
+            <span>Work email</span>
+            <input type="email" name="email" placeholder="you@studio.com" required>
+          </label>
+          <label>
+            <span>Studio name</span>
+            <input type="text" name="studio" placeholder="Your studio" required>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-glow btn-full">Get Started</button>
+      </form>
+      <p class="demo-success" id="demo-success" hidden>Thanks — we'll be in touch shortly.</p>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
